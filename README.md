@@ -1,15 +1,15 @@
 # LSMs Jmp'ing on BPF Trampolines
 
 This repository contains code snippets complementing my
-[blog post]()
+[blog post](https://blog.eb9f.de/2023/04/24/lsm2bpf.html)
 on Kernel Runtime Security Instrumentation (KRSI).
 
 ## How to use this Repository
 
 To build the toy LSM used in the blog post, get
 [libbpf-bootstrap](https://github.com/libbpf/libbpf-bootstrap)
-and place the files `mini_lsm.*` under `examples/c`. Then
-add `mini_lsm` to the APPS in the Makefile. Load the programs using
+and place the files `mini_lsm.*` under `examples/c`. Then,
+add `mini_lsm` to the APPS in the Makefile. Finally, load the programs using
 ```
 $ make mini_lsm
 $ sudo ./mini_lsm
